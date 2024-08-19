@@ -423,7 +423,7 @@ class Bigram(nn.Module):
         return logits, loss
 
 # -----------------------------------------------------------------------------
-# helper functions for evaluating and sampling from the model
+# helper functions for evaluating and sampling from the model 
 
 @torch.no_grad()
 def generate(model, idx, max_new_tokens, temperature=1.0, do_sample=False, top_k=None):
